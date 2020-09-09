@@ -157,120 +157,126 @@ For example, filterByWord(originalFlavors, "Chocolate") should return ["Chocolat
 DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 
 hint - you can use the .includes method to help you solve this */
+var far = [];
 
-function filterByWord( /*code here*/ ) {
-
-    /*code here*/
-
-}
-
-
-
-/* 🧁🍦🍨 STRETCH 🍨🍦🍫*/
-
-/* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
-
-Your function should accept: 
-
-(1) an array
-
-and should return the average number of words per item in the array. 
-
-For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
-
-function getAverageWordLength( /*code here*/ ) {
-
-    /*code here*/
-
-}
+function filterByWord(neworgflav, string) {
+    for (let i = 0; neworgflav.length; i++) {
+        if (neworgflav[i].includes(string) == true) {
+            far.unshift(neworgflav[i]);
+        }
+        console.log(far);
+        return far;
+    }
 
 
-/* STRETCH 2: Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors.
 
-Your function should accept 4 different arrays,
 
-and should return a new array called randomFlavors with a length 31.
 
-forExample, getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].*/
+    /* 🧁🍦🍨 STRETCH 🍨🍦🍫*/
 
-// Data ⬇️
-var newFlavors = ["Date night",
-    "U.S.S Butterscotch (Stranger Things special)",
-    "Honey Almond",
-    "Mint Chocolate Chip",
-    "Chocolate",
-    "Oreo® Cookies'n Cream",
-    "Chocolate Chip",
-    "Pralines 'n Cream",
-    "Very Berry Strawberry",
-    "Chocolate Chip Cookie Dough",
-    "Old Fashioned Butter Pecan",
-    "Jamoca®",
-    "Jamoca® Almond Fudge",
-    "Reese's® Peanut Butter Cup",
-    "Rocky Road",
-    "Peanut Butter ’n Chocolate",
-    "Gold Medal Ribbon®",
-    "World Class® Chocolate",
-    "Cherries Jubilee",
-    "Chocolate Fudge",
-    "Daiquiri Ice",
-    "Rainbow Sherbet",
-    "Rainbow Swirl"
-]
-var seasonalFlavors = ["America's Birthday Cake",
-    "Baseball Nut®",
-    "Blueberry Cheesecake",
-    "Bourbon Street Pecan Pie",
-    "Brownie Bar Mashup",
-    "Cherry Cordial with Kisses",
-    "Chocolate Mousse Royale",
-    "French Vanilla",
-    "Eggnog",
-    "German Chocolate Cake",
-    "Icing on the Cake",
-    "Love Potion #31",
-    "New York Cheesecake",
-    "Nutty Coconut",
-    "Peppermint",
-    "Strawberry Cheesecake",
-    "Rock ’n Pop Swirl",
-    "Reese’s Peanut Butter Cup",
-    "Trick Oreo Treat",
-    "Winter White Chocolate",
-    "made with Snickers®",
-    "made with M&M's®",
-    "Heath®",
-    "Mango Tango",
-]
-var regionalFlavors = ["Pink Bubblegum",
-    "Caramel Macchiato",
-    "York Peppermint Pattie",
-    "Cotton Candy",
-    "Orange Sherbet",
-    "Grape Ice",
-    "Watermelon Ice",
-    "Miami Vice Sorbet",
-    "Splish Splash®",
-    "Wild 'n Reckless Sherbet",
-    "Lemon Custard",
-    "Oregon Blackberry",
-    "Bananas ‘n Strawberries",
-    "Mississippi Mud",
-    "Rum Raisin",
-    "Creole Cream Cheese",
-    "Chocolate Almond",
-    "Fudge Brownie",
-    "Banana Nut",
-    "Black Walnut",
-    "Cotton Candy Crackle",
-    "Quarterback Crunch",
-    "Chocolate Chocolate Chip Cheesecake",
-    "Caramel 'n' Cookies"
-]
+    /* STRETCH 1: Write a function that returns the average number of words in an array. You should be able to use this function for any array, but can test with originalFlavors.
 
-function getRandomFlavors( /*code here*/ ) {
+    Your function should accept: 
 
-    /*code here*/
+    (1) an array
 
-}
+    and should return the average number of words per item in the array. 
+
+    For example, getAverageWordLength(originalFlavors) should return a number between 0 and 3. */
+
+    function getAverageWordLength( /*code here*/ ) {
+
+        /*code here*/
+
+    }
+
+
+    /* STRETCH 2: Baskin Robins now offers new flavors, seasonal flavors, and even regional flavors. Write a function that will randomly select a total of 31 flavors from originalFlavors, currentFlavors, seasonalFlavors, and regionalFlavors.
+
+    Your function should accept 4 different arrays,
+
+    and should return a new array called randomFlavors with a length 31.
+
+    forExample, getRandomFlavors(originalFlavors, newFlavors, seasonalFlavors, regionalFlavors) might return ["Strawberry Cheesecake", "Eggnog,"..."Chocolate"].*/
+
+    // Data ⬇️
+    var newFlavors = ["Date night",
+        "U.S.S Butterscotch (Stranger Things special)",
+        "Honey Almond",
+        "Mint Chocolate Chip",
+        "Chocolate",
+        "Oreo® Cookies'n Cream",
+        "Chocolate Chip",
+        "Pralines 'n Cream",
+        "Very Berry Strawberry",
+        "Chocolate Chip Cookie Dough",
+        "Old Fashioned Butter Pecan",
+        "Jamoca®",
+        "Jamoca® Almond Fudge",
+        "Reese's® Peanut Butter Cup",
+        "Rocky Road",
+        "Peanut Butter ’n Chocolate",
+        "Gold Medal Ribbon®",
+        "World Class® Chocolate",
+        "Cherries Jubilee",
+        "Chocolate Fudge",
+        "Daiquiri Ice",
+        "Rainbow Sherbet",
+        "Rainbow Swirl"
+    ]
+    var seasonalFlavors = ["America's Birthday Cake",
+        "Baseball Nut®",
+        "Blueberry Cheesecake",
+        "Bourbon Street Pecan Pie",
+        "Brownie Bar Mashup",
+        "Cherry Cordial with Kisses",
+        "Chocolate Mousse Royale",
+        "French Vanilla",
+        "Eggnog",
+        "German Chocolate Cake",
+        "Icing on the Cake",
+        "Love Potion #31",
+        "New York Cheesecake",
+        "Nutty Coconut",
+        "Peppermint",
+        "Strawberry Cheesecake",
+        "Rock ’n Pop Swirl",
+        "Reese’s Peanut Butter Cup",
+        "Trick Oreo Treat",
+        "Winter White Chocolate",
+        "made with Snickers®",
+        "made with M&M's®",
+        "Heath®",
+        "Mango Tango",
+    ]
+    var regionalFlavors = ["Pink Bubblegum",
+        "Caramel Macchiato",
+        "York Peppermint Pattie",
+        "Cotton Candy",
+        "Orange Sherbet",
+        "Grape Ice",
+        "Watermelon Ice",
+        "Miami Vice Sorbet",
+        "Splish Splash®",
+        "Wild 'n Reckless Sherbet",
+        "Lemon Custard",
+        "Oregon Blackberry",
+        "Bananas ‘n Strawberries",
+        "Mississippi Mud",
+        "Rum Raisin",
+        "Creole Cream Cheese",
+        "Chocolate Almond",
+        "Fudge Brownie",
+        "Banana Nut",
+        "Black Walnut",
+        "Cotton Candy Crackle",
+        "Quarterback Crunch",
+        "Chocolate Chocolate Chip Cheesecake",
+        "Caramel 'n' Cookies"
+    ]
+
+    function getRandomFlavors( /*code here*/ ) {
+
+        /*code here*/
+
+    }
