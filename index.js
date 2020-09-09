@@ -137,8 +137,9 @@ and should return a new array that is identical to the old array. You can name t
 var newarray = [];
 
 function copy(originalFlavors, newarray) {
-
+    var newarray = [];
     newarray = [...originalFlavors];
+    console.log(newarray);
     return newarray;
 
 }
@@ -161,8 +162,8 @@ var far = [];
 
 function filterByWord(neworgflav, string) {
     for (let i = 0; i < neworgflav.length; i++) {
-        if (neworgflav[i].includes(string) === true) {
-            far.unshift(neworgflav[i]);
+        if (neworgflav[i].includes(string)) {
+            far.push(neworgflav[i]);
         }
         console.log(far);
         return far;
