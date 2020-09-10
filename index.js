@@ -53,6 +53,7 @@ function is31Flavors(neworgflav) {
         is31 = false;
         return is31;
     }
+    console.log(is31)
 }
 
 /* Task 2: Corporate has come to you with an idea for a new flavor: Rainbow Sherbert! They think this will be a game changer. You need to modify the array to include this flavor. 
