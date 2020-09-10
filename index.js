@@ -160,14 +160,14 @@ DO NOT USE ADVANCED ARRAY METHODS (i.e. .filter) to solve this problem.
 hint - you can use the .includes method to help you solve this */
 var far = [];
 
-function filterByWord(neworgflav, string) {
-    for (let i = 0; i < neworgflav.length; i++) {
-        if (neworgflav[i].includes(string)) {
-            far.push(neworgflav[i]);
+function filterByWord(originalFlavors, string) {
+    for (var i = 0; i < originalFlavors.length; i++) {
+        if (originalFlavors[i].includes(string)) {
+            far.push(originalFlavors[i]);
         }
-        console.log(far);
-        return far;
     }
+    return far;
+    console.log(far);
 }
 
 
